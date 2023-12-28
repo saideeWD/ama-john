@@ -1,0 +1,31 @@
+.product{
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 2px;
+    margin-right: 1px;
+     margin-bottom: 20px;
+}
+.product-img{
+  
+    width:170px;
+    
+
+}
+.product-name{
+    color: rgb(73, 160, 189);
+    font-weight: 400;
+
+}
+.main-btn{
+    background-color: rgb(235, 144, 24);
+    color: rgb(255, 255, 255);
+    width: 140px;
+    height: 30px;
+    border: 1px solid goldenrod;
+    border-radius: 5px ;
+    cursor: pointer;
+   
+}
+.category-btn{
+    text-align:justify;
+}
