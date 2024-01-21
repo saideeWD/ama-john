@@ -1,13 +1,18 @@
 .product{
     display: flex;
     border-bottom: 1px solid lightgray;
-    padding-bottom: 2px;
-    margin-right: 1px;
+    padding-bottom: 20px;
+    margin-right: 7px;
      margin-bottom: 20px;
+  
+    
 }
 .product-img{
   
-    width:170px;
+    width:450px;
+    height: 320px;
+    margin-left: 30px;
+  
     
 
 }
@@ -27,5 +32,7 @@
    
 }
 .category-btn{
-    text-align:justify;
+   text-align: justify;
+   margin-left: 180px;
+  
 }
