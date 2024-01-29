@@ -5,6 +5,7 @@ import './Cart.css'
 const Cart = (props) => {
     console.log(props.cart)
     const cart = props.cart ;
+    // const total = cart.reduce((sum , product)=>sum+ product.price);
 
     // const total= cart.reduce((total , prd) => total + prd.price,0);
     let total = 0;

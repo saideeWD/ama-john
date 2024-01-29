@@ -1,20 +1,23 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState ,useHistory} from "react";
 import { deleteShoppingCart, getShoppingCart } from "../../utilities/fakedb";
 import { fakeData } from "../Data/fakedata";
 import ReviewItem from "./../ReviewItem/ReviewItem";
 import Cart from './../Cart/Cart';
-import happyImage from '../../images/giphy.gif'
+import happyImage from '../../images/giphy.gif';
+import { useNavigate } from "react-router-dom";
 
 
 
 const Review = () => {
   const [cart, setCart] = useState([]);
   const [orderPlaced, setOrderPlaced] = useState(false);
+  const history = useNavigate();
 
-  const handlePlaceOrder = () => {
-      setCart([]);
-      setOrderPlaced(true);
-     deleteShoppingCart();
+
+  const handleProceedCheckout = () => {
+    history('/shipment')
+
+    
   }
 
   
@@ -56,7 +59,7 @@ const Review = () => {
      </div>
      <div className="cart-shop">
         <Cart cart={cart}>
-          <button onClick={handlePlaceOrder}  className="main-btn">Place Order</button>
+          <button onClick={handleProceedCheckout}  className="main-btn">Proceed Checkout</button>
         </Cart>
      </div>
     

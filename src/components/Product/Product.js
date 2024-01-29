@@ -7,8 +7,9 @@ import Reating from "../Reting/Reating";
 
 const Product = (props) => {
   // console.log(props);
-  const {key, thumbnail, description, title, category, stock, brand, price,  } =
-    props.product;
+  const { product, handleAddProduct } = props;
+  const { key, thumbnail, description, title, category, stock, brand, price } =
+    product;
 
   return (
     <div className="product">
@@ -17,7 +18,7 @@ const Product = (props) => {
       </div>
       <div>
         <h4 className="product-name">
-          <Link to={"/product/" +key}>{description}</Link>
+          <Link to={"/product/" + key}>{description}</Link>
         </h4>
 
         <br />
@@ -32,7 +33,6 @@ const Product = (props) => {
             <small>Only Stock : {stock}</small>
           </p>
           <small>
-          
             <Reating></Reating>
           </small>
           <h3>${price}</h3>
@@ -40,9 +40,8 @@ const Product = (props) => {
           {props.showAddToCart && (
             <button
               className="main-btn "
-              onClick={() => props.handleAddProduct(props.product)}
+              onClick={() => handleAddProduct(product)}
             >
-          
               <FontAwesomeIcon icon={faShoppingCart} /> add to cart
             </button>
           )}
