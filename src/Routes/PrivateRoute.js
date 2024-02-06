@@ -1,28 +1,19 @@
-import React, { useContext } from "react";
-import { Link, Navigate, useLocation } from "react-router-dom";
+import React from "react";
+import { Navigate,} from "react-router-dom";
 import Shipment from './../components/Shipment/Shipment';
-import { UserContaxt } from './../App';
+import useAuth from './useAuth/useAuth';
+
 
 const PrivateRoute = ({children}) => {
-  const [loggedInUser, setloggedInUser] = useContext(UserContaxt);
- 
-
-  if(loggedInUser==null){
-    return <Navigate to={'/login'}/>
-  }
-
-  else if(Shipment){
-    return <Shipment/>
-
-  }
-
-  return (
-    <div>
-   
+  const auth = useAuth; 
 
   
-    </div>
-  );
+ 
+
+ 
+
+  return auth ? children : <Navigate to={'/login'}/>
+    
 };
 
 export default PrivateRoute;
