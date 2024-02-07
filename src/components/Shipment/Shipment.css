@@ -1,0 +1,23 @@
+.ship-from input{
+   display: block;
+   margin-top: 30px;
+   padding: 5px;
+   border: 1px solid grey;
+   border-radius: 7px;
+   width: 300px;
+}
+
+.ship-from{
+    margin: 30px 100px;
+}
+.error{
+color: red;
+}
+.ship-from button{
+    display: block;
+    margin-top: 9px;
+    width: 300px;
+    border-radius: 6px;
+    background-color: rgb(66, 150, 33);
+    box-shadow: 10px 10px  10px grey;
+}

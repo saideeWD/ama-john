@@ -19,9 +19,10 @@
     "react-bootstrap": "^2.9.2",
     "react-dom": "^18.2.0",
     "react-firebase-hooks": "^5.1.1",
+    "react-hook-form": "^7.50.1",
     "react-rater": "^6.0.5",
     "react-rating-star-with-type": "^1.2.2",
-    "react-router-dom": "^6.21.3",
+    "react-router-dom": "^6.22.0",
     "react-scripts": "5.0.1",
     "react-social-login-buttons": "^3.9.1",
     "react-stars": "^2.2.5",
@@ -50,5 +51,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "daisyui": "^4.6.1"
   }
 }

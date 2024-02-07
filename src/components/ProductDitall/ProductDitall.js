@@ -9,7 +9,7 @@ const ProductDitall = () => {
     
     return (
         <div>
-            <h1> {productkey} Your Product Ditall</h1>
+       <br />
             <Product showAddToCart ={false} product = {product}></Product>
     
         </div>

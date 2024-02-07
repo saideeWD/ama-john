@@ -1,4 +1,3 @@
-
 import "./App.css";
 import React, { createContext, useState } from "react";
 
@@ -19,9 +18,10 @@ function App() {
 
   return (
     <UserContaxt.Provider value={[loggedInUser, setloggedInUser]}>
-      <RouterProvider router={router}><MainLayout></MainLayout></RouterProvider>
-     
-     
+   
+      <RouterProvider router={router}>
+        <MainLayout></MainLayout>
+      </RouterProvider>
     </UserContaxt.Provider>
   );
 }
