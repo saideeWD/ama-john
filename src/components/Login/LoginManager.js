@@ -98,6 +98,7 @@ export const createUserWithEmailAndPassword = (email,password,name) => {
       const newUserInfo = res.user;
       newUserInfo.error = "";
       newUserInfo.success = true;
+      verifyEmail()
       updateUserName(name);
       return newUserInfo;
     })
@@ -151,3 +152,10 @@ const updateUserName = (name) => {
       console.log(error);
     });
 };
+const verifyEmail = () =>{
+  firebase.auth().currentUser.sendEmailVerification()
+  .then(() => {
+    // Email verification sent!
+    // ...
+  });
+}
